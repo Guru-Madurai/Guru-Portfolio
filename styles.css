@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "Segoe UI",sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container 
+{
+    max-width: 900px;
+    margin: auto;
+    padding: 32px;
+}
+
+div
+{
+    max-width: 900px;
+    margin: auto;
+}
+
+h1
+{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+p
+{
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.img
+{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3.5px solid #3f3f3f;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2
+{
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.abo
+{
+    text-align: left;
+    font-size: 18px;
+}
+
+.skills,.socials {
+    margin-bottom: -.6rem
+}
+
+.skills ul,.socials ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills i,.socials i {
+    font-size: 20px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.skills li,.socials li {
+    background: #f5f5f5;
+    padding: 8px 12px;
+    display: inline-block;
+    margin-bottom: 10px
+}
+
+.socials li {
+    width: 150px;
+    font-size: 18px;
+    border-radius: 6px;
+    margin-right: 10px;
+    transition: background .3s;
+}
+
+.socials li:hover {
+    background: #e0e0e0
+}
+
+.socials a:hover,a {
+    text-decoration: none
+}
+
+.skills i,a {
+    color: #0055d4
+}
+
+.skills i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.skills li {
+    width: 150px;
+    border-radius: 5px;
+    margin-right: 6px;
+    font-size: 18px;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .container {
+        padding: 32px;
+    }
+    
+    h2 {
+        text-align: left;
+    }
+    
+    .abo {
+        text-align: left;
+    }
+    
+    .social-links,
+    .skills {
+        justify-content: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 32px;
+    }
+    
+    .social-btn,
+    .skills-btn {
+        width: 100%;
+        justify-content: left;
+    }
+}
